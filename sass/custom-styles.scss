@@ -3,8 +3,37 @@
 @import 'font-awesome.min.css';
 @import 'http://fonts.googleapis.com/css?family=Open+Sans:300,600';
 
+.center-parent {
+	text-align: center;
+	}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	}
+
 #header {
 	#logo {
 		color: black;
+		}
+	}
+
+#footer {
+	@extend .center-parent;
+	.copyright {
+		.name {
+			color: $color-accent4-bg;
+			}
+		}
+	.icons {
+		a {
+			padding: 0.15em;
+			font-size: 3em;
+			color: white;
+			@include transition(color 0.3s);
+			&:hover {
+				color: $color-accent4-bg;
+				}
+			}
 		}
 	}

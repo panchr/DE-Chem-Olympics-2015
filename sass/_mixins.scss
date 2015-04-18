@@ -24,6 +24,10 @@
 	@keyframes #{$name} { @content; }
 }
 
+@mixin transition($values...) {
+	@include vendor-property(transition, $values);
+	}
+
 @mixin icon($content: false) {
 	text-decoration: none;
 
