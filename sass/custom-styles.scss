@@ -56,3 +56,9 @@ $color-primary: $color-accent4-bg;
 			}
 		}
 	}
+
+#banner {
+	min-height: 100vh;
+	max-height: 100vh;
+	background-image: url("../images/earth.jpg");
+	}
