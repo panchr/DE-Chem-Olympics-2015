@@ -17,6 +17,12 @@ $color-primary: $color-accent4-bg;
 #header {
 	#logo {
 		color: $color-primary;
+		.logo-image {
+			width: 2em;
+			height: auto;
+			vertical-align: middle;
+			padding-right: 1px;
+			}
 		}
 	}
 
