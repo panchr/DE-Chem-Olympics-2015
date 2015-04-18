@@ -1,0 +1,143 @@
+@import 'vars';
+@import 'mixins';
+
+/*
+	Cogent by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	html, body {
+		min-width: 320px;
+	}
+
+	body, input, select, textarea {
+		font-size: 12pt;
+	}
+
+/* List */
+
+	ul {
+		&.actions {
+			margin: 0 0 $size-element-margin 0;
+
+			li {
+				display: block;
+				padding: ($size-element-margin * 0.5) 0 0 0;
+				text-align: center;
+				width: 100%;
+
+				&:first-child {
+					padding-top: 0;
+				}
+
+				> * {
+					width: 100%;
+					margin: 0 !important;
+
+					&.icon {
+						&:before {
+							margin-left: -2em;
+						}
+					}
+				}
+			}
+
+			&.small {
+				li {
+					padding: ($size-element-margin * 0.25) 0 0 0;
+
+					&:first-child {
+						padding-top: 0;
+					}
+				}
+			}
+		}
+
+		&.labeled-icons {
+			li {
+				margin-bottom: $size-element-margin;
+			}
+		}
+	}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		padding: 0;
+	}
+
+	.button {
+
+		&.inline {
+			margin: 1em;
+		}
+	}
+
+/* Box */
+
+	.box {
+		&.big {
+			@include padding(2em, 1em);
+
+			header.major {
+				padding-top: 0;
+			}
+		}
+	}
+
+/* Plans */
+
+	.plan {
+		max-width: 100%;
+	}
+
+/* Browser Mockup */
+
+	.browser-mockup {
+		margin-top: 3em;
+
+		.chrome {
+			&:before {
+				content: '\f053 \f054';
+				width: 2.75em;
+			}
+
+			&:after {
+				display: none;
+			}
+		}
+
+		.url {
+			left: 5.25em;
+			width: calc(100% - 6em);
+		}
+	}
+
+/* Wrapper */
+
+	.wrapper {
+		@include padding(3em, 0);
+	}
+
+/* Banner */
+
+	#banner {
+		padding-top: 6em;
+	}
+
+/* Footer */
+
+	#footer {
+		@include padding(3em, 0);
+
+		.about {
+			text-align: left;
+			margin-bottom: 0;
+		}
+	}

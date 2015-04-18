@@ -1,0 +1,112 @@
+/*
+	Cogent by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 11pt;
+	}
+
+	header.major {
+		margin-bottom: 2em;
+	}
+
+	h2 {
+		font-size: 1.55em;
+	}
+
+	h3 {
+		font-size: 1.15em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+/* Box */
+
+	.box.big {
+		padding: 2em 1.5em 0.1em 1.5em;
+	}
+
+		.box.big header.major {
+			padding-top: 0.5em;
+		}
+
+/* Button */
+
+	input[type="submit"].big,
+	input[type="reset"].big,
+	input[type="button"].big,
+	button.big,
+	.button.big {
+		font-size: 1em;
+		line-height: 2.85em;
+	}
+
+/* Plans */
+
+	.plans {
+		margin-bottom: 2em;
+	}
+
+	.plan {
+		max-width: 75%;
+	}
+
+/* Browser Mockup */
+
+	.browser-mockup {
+		margin-top: 3em;
+	}
+
+		.browser-mockup .chrome {
+			font-size: 0.8em;
+		}
+
+/* Wrapper */
+
+	.wrapper {
+		padding: 3em 0 1em 0;
+	}
+
+/* Banner */
+
+	#banner {
+		padding: 6.5em 2em 0;
+	}
+
+		#banner h2 {
+			font-size: 1.6em;
+		}
+
+		#banner p {
+			font-size: 1em;
+		}
+
+/* Main */
+
+	#main {
+		padding-top: 1.5em;
+	}
+
+/* Footer */
+
+	#footer {
+		padding: 3em 0 1em 0;
+	}
+
+		#footer .copyright {
+			margin-top: 0;
+		}
+
+			#footer .copyright li {
+				border-left: 0;
+				display: block;
+				line-height: 2.5;
+				margin-left: 0;
+				padding-left: 0;
+			}

@@ -1,0 +1,74 @@
+// Mixins.
+	@mixin padding($tb, $lr, $pad: (0,0,0,0)) {
+		padding: ($tb + nth($pad,1)) ($lr + nth($pad,2)) max(0.1em, $tb - $size-element-margin + nth($pad,3)) ($lr + nth($pad,4));
+	}
+
+// Duration.
+	$duration-transition:		0.2s;
+
+// Size.
+	$size-border-radius:		8px;
+	$size-element-height:		2.75em;
+	$size-element-margin:		2em;
+
+// Font.
+	$font-family:				'Open Sans', Arial, Helvetica, sans-serif;
+	$font-family-fixed:			'Courier New', monospace;
+	$font-line-height:			2em;
+	$font-weight:				300;
+	$font-weight-bold:			600;
+
+// Color.
+	$color-bg:					#f7f7f7;
+	$color-fg:					#4b505c;
+	$color-fg-bold:				#3d424f;
+	$color-fg-light:			#bbb;
+	$color-border:				rgba(144,144,144,0.25);
+	$color-border-bg:			rgba(144,144,144,0.075);
+	$color-border2:				rgba(144,144,144,0.5);
+	$color-border2-bg:			rgba(144,144,144,0.2);
+
+	$color-accent-bg:			#00b47b;
+	$color-accent-fg:			mix($color-accent-bg, #ffffff, 25%);
+	$color-accent-fg-bold:		#ffffff;
+	$color-accent-fg-light:		mix($color-accent-bg, #ffffff, 40%);
+	$color-accent-border:		rgba(255,255,255,0.25);
+	$color-accent-border-bg:	rgba(255,255,255,0.075);
+	$color-accent-border2:		rgba(255,255,255,0.5);
+	$color-accent-border2-bg:	rgba(255,255,255,0.2);
+
+	$color-accent2-bg:			#595C68;
+	$color-accent2-fg:			#d9dadb;
+	$color-accent2-fg-bold:		#ffffff;
+	$color-accent2-fg-light:	mix($color-accent2-bg, #ffffff, 40%);
+	$color-accent2-border:		rgba(255,255,255,0.25);
+	$color-accent2-border-bg:	rgba(255,255,255,0.075);
+	$color-accent2-border2:		rgba(255,255,255,0.5);
+	$color-accent2-border2-bg:	rgba(255,255,255,0.2);
+
+	$color-accent3-bg:			#4f91d2;
+	$color-accent3-fg:			mix($color-accent3-bg, #ffffff, 25%);
+	$color-accent3-fg-bold:		#ffffff;
+	$color-accent3-fg-light:	mix($color-accent3-bg, #ffffff, 40%);
+	$color-accent3-border:		rgba(255,255,255,0.25);
+	$color-accent3-border-bg:	rgba(255,255,255,0.075);
+	$color-accent3-border2:		rgba(255,255,255,0.5);
+	$color-accent3-border2-bg:	rgba(255,255,255,0.2);
+
+	$color-accent4-bg:			#4486c5;
+	$color-accent4-fg:			mix($color-accent4-bg, #ffffff, 25%);
+	$color-accent4-fg-bold:		#ffffff;
+	$color-accent4-fg-light:	mix($color-accent4-bg, #ffffff, 40%);
+	$color-accent4-border:		rgba(255,255,255,0.25);
+	$color-accent4-border-bg:	rgba(255,255,255,0.075);
+	$color-accent4-border2:		rgba(255,255,255,0.5);
+	$color-accent4-border2-bg:	rgba(255,255,255,0.2);
+
+	$color-accent5-bg:			#3d424f;
+	$color-accent5-fg:			mix($color-accent5-bg, #ffffff, 25%);
+	$color-accent5-fg-bold:		#ffffff;
+	$color-accent5-fg-light:	mix($color-accent5-bg, #ffffff, 75%);
+	$color-accent5-border:		rgba(255,255,255,0.25);
+	$color-accent5-border-bg:	rgba(255,255,255,0.075);
+	$color-accent5-border2:		rgba(255,255,255,0.5);
+	$color-accent5-border2-bg:	rgba(255,255,255,0.2);

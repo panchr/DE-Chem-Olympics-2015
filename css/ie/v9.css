@@ -1,0 +1,19 @@
+/*
+	Cogent by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Spotlight */
+
+	.spotlight .row {
+		display: -moz-block;
+		display: -webkit-block;
+		display: -o-block;
+		display: -ms-block;
+		display: block;
+	}
+
+	.spotlight h2 {
+		margin-top: 2em;
+	}

@@ -1,0 +1,43 @@
+/*
+	Cogent by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 11pt;
+	}
+
+/* Spotlight */
+
+	.spotlight:first-child {
+		margin-top: 0 !important;
+	}
+
+	.spotlight:last-child {
+		margin-bottom: 0;
+	}
+
+	.spotlight .image {
+		padding: 0 !important;
+	}
+
+/* Browser Mockup */
+
+	.browser-mockup {
+		max-width: 80%;
+	}
+
+/* Wrapper */
+
+	.wrapper {
+		padding: 5em 0 3em 0;
+	}
+
+/* Footer */
+
+	#footer {
+		padding: 5em 0 3em 0;
+	}

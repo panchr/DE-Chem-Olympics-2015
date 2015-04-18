@@ -1,0 +1,20 @@
+@import 'vars';
+@import 'mixins';
+
+/*
+	Cogent by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Spotlight */
+
+	.spotlight {
+		.row {
+			@include vendor-value('display', 'block');
+		}
+
+		h2 {
+			margin-top: $size-element-margin;
+		}
+	}

@@ -1,0 +1,36 @@
+# Created by https://www.gitignore.io
+# Rushy Panchal
+
+# Deployment
+.deploy-config
+
+# Other files
+*.7z
+*.zip
+keep/
+
+# Sass
+.sass-cache
+
+# SublimeText
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Node modules
+node_modules/
+
+# Bitwise Profile
+*.bscp
+
+# Log Files
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
