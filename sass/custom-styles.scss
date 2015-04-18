@@ -3,6 +3,8 @@
 @import 'font-awesome.min.css';
 @import 'http://fonts.googleapis.com/css?family=Open+Sans:300,600';
 
+$color-primary: $color-accent4-bg;
+
 .center-parent {
 	text-align: center;
 	}
@@ -14,15 +16,16 @@
 
 #header {
 	#logo {
-		color: black;
+		color: $color-primary;
 		}
 	}
 
 #footer {
 	@extend .center-parent;
 	.copyright {
+		font-size: 1.1em;
 		.name {
-			color: $color-accent4-bg;
+			color: $color-primary;
 			}
 		}
 	.icons {
@@ -32,7 +35,17 @@
 			color: white;
 			@include transition(color 0.3s);
 			&:hover {
-				color: $color-accent4-bg;
+				color: $color-primary;
+				
+				}
+			img {
+				width: 1em;
+				height: auto;
+				@include vendor-property(filter, grayscale(50%));
+				@include vendor-only(transition, filter 0.3s);
+				&:hover {
+					@include vendor-property(filter, none);
+					}
 				}
 			}
 		}
