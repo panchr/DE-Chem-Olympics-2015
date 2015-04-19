@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title> </title>
+		<title>Chemistry of Fossil Fuels</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -24,31 +24,13 @@
 	<header id="header">
 		<h1><a id="logo" href="index.html">
 			<img src = "images/de-logo.png" class  = "logo-image">
-			Fossil Fuels <span>
-			by Dwight-Englewood Chemistry Olympics</span>
+			Fossil Fuels
+			<span>by Dwight-Englewood Chemistry Olympics</span>
 		</a></h1>
 		<nav id="nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li>
-					<a href="#">Layouts</a>
-					<ul>
-						<li><a href="left-sidebar.html">Left Sidebar</a></li>
-						<li><a href="right-sidebar.html">Right Sidebar</a></li>
-						<li><a href="no-sidebar.html">No Sidebar</a></li>
-						<li>
-							<a href="">Submenu</a>
-							<ul>
-								<li><a href="#">Option 1</a></li>
-								<li><a href="#">Option 2</a></li>
-								<li><a href="#">Option 3</a></li>
-								<li><a href="#">Option 4</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li><a href="elements.html">Elements</a></li>
-				<li><a href="#" class="button">Sign Up</a></li>
+				<li><a href="index.html#contents">Table of Contents</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -68,4 +50,18 @@
 			<li><a href="#">Nasrin Lin</a></li>
 		</ul>
 	</footer>
+	<script>
+		jQuery.fn.smoothScroll = function(options) {
+			var options = jQuery.extend({offset: 0, duration: 900, easing: "swing"}, options);
+			$('html, body').stop().animate({'scrollTop': this.offset().top + options.offset}, options.duration, options.easing);
+			}
+
+		$("a[href^=#]").click(function (event) {
+			event.preventDefault();
+			var anchorLink = this.href.replace(this.baseURI, "");
+			$(anchorLink).smoothScroll();
+			$("html, body").promise().done(function() {window.history.replaceState(null, "Change Current Anchored Section", anchorLink)});
+			return false;
+			});
+	</script>
 </html>

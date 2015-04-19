@@ -17,13 +17,14 @@ $color-primary: $color-accent4-bg;
 #header {
 	#logo {
 		color: $color-primary;
-		.logo-image {
-			width: 2em;
-			height: auto;
-			vertical-align: middle;
-			padding-right: 1px;
-			}
 		}
+	}
+
+.logo-image {
+	width: 2em;
+	height: auto;
+	vertical-align: middle;
+	padding-right: 1px;
 	}
 
 #footer {
@@ -66,5 +67,29 @@ $color-primary: $color-accent4-bg;
 .spotlight {
 	.image img {
 		border-radius: inherit;
+		}
+	}
+
+.contents-table {
+	a {
+		font-size: 16pt;
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
+		@include transition(border-color 0.3s);
+		&:hover, &:focus {
+			color: white;
+			border-color: white;
+			}
+		&:after {
+			content: "\a";
+			white-space: pre; 
+			}
+		}
+	}
+
+@media (max-width: 768px) {
+	#titleBar .title span {
+		display: none;
 		}
 	}
