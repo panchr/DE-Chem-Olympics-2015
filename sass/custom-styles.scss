@@ -62,3 +62,9 @@ $color-primary: $color-accent4-bg;
 	max-height: 100vh;
 	background-image: url("../images/earth.jpg");
 	}
+
+.spotlight {
+	.image img {
+		border-radius: inherit;
+		}
+	}
