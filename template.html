@@ -62,6 +62,9 @@
 			$("a[href^=#]").click(function (event) {
 				event.preventDefault();
 				var anchorLink = this.href.replace(this.baseURI, "");
+				if (! this.baseURI) {
+					anchorLink = this.hash;
+					}
 				$(anchorLink).smoothScroll();
 				$("html, body").promise().done(function() {window.history.replaceState(null, "Change Current Anchored Section", anchorLink)});
 				return false;
