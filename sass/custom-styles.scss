@@ -88,6 +88,16 @@ $color-primary: $color-accent4-bg;
 		}
 	}
 
+#state-info {
+	float: right;
+	div {
+		display: none;
+		&.active {
+			display: block;
+			}
+		}
+	}
+
 @media (max-width: 768px) {
 	#titleBar .title span {
 		display: none;
