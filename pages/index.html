@@ -13,11 +13,18 @@
 				</header>
 				<section>
 					<div class = "row">
-						<div class = "6u 12u$(medium) contents-table">
+						<div class = "4u 12u$(medium) contents-table float-left">
 							<h3>General</h3>
 							<a href = "#general-coal">Coal</a>
 							<a href = "#general-oil">Oil</a>
 							<a href = "#general-gas">Natural Gas</a>
+						</div>
+						<div class = "4u 12u$(medium) contents-table float-left">
+							<h3>Resource Locations</h3>
+							<a href = "#us-map">Map</a>
+							<a href = "#locations-coal">Coal</a>
+							<a href = "#locations-oil">Oil</a>
+							<a href = "#locations-gas">Natural Gas</a>
 						</div>
 					</div>
 				</section>
@@ -76,14 +83,56 @@
 		<section id = "locations" class = "wrapper style1">
 			<div class = "container">
 				<header>
-					<h2>U.S. Locations</h2>
+					<h2>Resource Locations in the U.S.</h2>
 					<p>To see what resources are extracted in a certain state, hover over it.</p>
 				</header>
-				<div id = "state-info"></div>
-				<div id = "us-map"></div>
-				<div id = "state-info-all"></div>
-				<i class = "fa fa-angle-down toggler" id = "toggle-state-all"></i>
-				<div id = "name-info-all"></div>
+				<div class = "row">
+					<div id = "state-info"></div>
+					<div id = "us-map"></div>
+				</div>
+				<div class = "row">
+					<h3 class = "6u float-left">Resources per state</h3>
+					<h3 class = "6u float-right">Per-resource locations</h3>
+				</div>
+				<div class = "row">
+					<div id = "state-info-all" class = "expanding-group 6u float-left"></div>
+					<div id = "name-info-all" class = "6u float-right">
+						<div id = "locations-coal">
+							<h4>Coal</h4>
+							<p>Most coal in the U.S. in the mined in the Appalachians and in the Midwest. Other locations include:</p>
+							<ul>
+								<li>Allegheny and Applachians Mountains</li>
+								<li>Wyoming, West Virginia, Illionois, Montana</li>
+								<li>North Antelope Rochelle Mine in Gillette, Wyoming</li>
+								<li>Coal region near Pennsylvania for anthracite coal</li>
+								<li>Eastern and Western Coal Fields of Kentucky</li>
+								<li>Southern Illionois Coal Fields</li>
+								<li>Colorado, especially the Denver Basin</li>
+								<li>Powder River Basin in Montana and Wyoming</li>
+								<li>Raton Basin in New Mexico and Colorado</li>
+							</ul>
+						</div>
+						<div id = "locations-oil">
+							<h4>Oil</h4>
+							<p>At the end of 2012, there were 30.5 billion barrels of crude oil in reserves. There are also estimates that approximately 198 billion barrels remain undiscovered. However, 2012 also experienced the greatest production increase since 1859, with an additional 800,000 barrels produced.</p>
+							<ul>
+								<li>North Dakota and Montana have oil-bearing shales that contain kerogen, which is a precursor to oil</li>
+								<li>The U.S. has the largest deposits of shale, even though it is not commerically converted to oil</li>
+								<li>The Alaskan National Petroleum Reserve and the Bakken Formation</li>
+								<li>Alaska OCS has approximately 38.8 billion barrels of crude oil.</li>
+							</ul>
+						</div>
+						<div id = "locations-gas">
+							<h4>Natural Gas</h4>
+							<p>Most of the world's natural gas reserves are in the Middle East, Europe, and the former U.S.S.R. The U.S. makes up about 4% but the undiscovered gases will allow the nation's supply to last for at least another 60 years.</p>
+							<ul>
+								<li>Produced in 32 states</li>
+								<li>Texas, Oklahoma, New Mexico, Wyoming, and Louisana are the top producers</li>
+								<li>Combined, they produce over 50% of the nation's natural gas</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 			<script src = "js/raphael-min.js"></script>
 			<script src = "js/usmap.js"></script>

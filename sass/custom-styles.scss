@@ -97,9 +97,23 @@ $color-primary: $color-accent4-bg;
 		}
 	}
 
+.float-left {
+	float: left;
+	}
+
+.float-right {
+	float: right;
+	}
+
+.expanding-group {
+	max-height: 30vh;
+	overflow-y: scroll;
+	}
+
 #state-info {
 	float: right;
 	div {
+		overflow: hidden;
 		display: none;
 		&.active {
 			display: block;
