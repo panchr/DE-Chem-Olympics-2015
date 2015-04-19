@@ -107,6 +107,9 @@
 			showLabels: true,
 			stateStyles: {fill: '#bdc3c7'},
 			stateHoverStyles: {fill: '#34495e'},
+			click: function(event, data) {
+				clickState(data.name, data.shape);
+				},
 			mouseover: function(event, data) {
 				displayStateInfo(data.name);
 				},
@@ -116,14 +119,36 @@
 			});
 		}
 
-	function displayStateInfo(state) {
+	var displayedState = {name: "", shape: null};
+	function displayStateInfo(state, force) {
 		// Display a state info for the hovered state
-		$("#state-info #" + state).addClass("active");
+		if (!displayedState.name || force) {
+			$("#state-info #" + state).addClass("active");
+			}
 		}
 
-	function hideStateInfo(state) {
+	function hideStateInfo(state, force) {
 		// Hide the state info the hovered state
-		$("#state-info #" + state).removeClass("active");
+		if (!displayedState.name || force) {
+			$("#state-info #" + state).removeClass("active");
+			}
+		}
+
+	function clickState(state, shape) {
+		// Click a state and display it's information
+		if (displayedState.name) {
+			hideStateInfo(displayedState.name, true);
+			}
+		// TODO: use $(shape.node).attr('fill', 'color') to set the background of the shape on the click
+		if (state != displayedState.name) {
+			displayStateInfo(state, true);
+			displayedState.name = state;
+			displayedState.shape = shape;
+			}
+		else {
+			displayedState.name = "";
+			displayedState.shape = null;
+			}
 		}
 
 	$(document).ready(function() {

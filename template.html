@@ -57,13 +57,18 @@
 			var options = jQuery.extend({offset: 0, duration: 900, easing: "swing"}, options);
 			$('html, body').stop().animate({'scrollTop': this.offset().top + options.offset}, options.duration, options.easing);
 			}
+		function setSmoothScrolls() {
+			// Set the smooth scrolling handlers
+			$("a[href^=#]").click(function (event) {
+				event.preventDefault();
+				var anchorLink = this.href.replace(this.baseURI, "");
+				$(anchorLink).smoothScroll();
+				$("html, body").promise().done(function() {window.history.replaceState(null, "Change Current Anchored Section", anchorLink)});
+				return false;
+				});
+			}
 
-		$("a[href^=#]").click(function (event) {
-			event.preventDefault();
-			var anchorLink = this.href.replace(this.baseURI, "");
-			$(anchorLink).smoothScroll();
-			$("html, body").promise().done(function() {window.history.replaceState(null, "Change Current Anchored Section", anchorLink)});
-			return false;
-			});
+		$(document).ready(setSmoothScrolls);
+		skel.on('change', setSmoothScrolls);
 	</script>
 </html>
