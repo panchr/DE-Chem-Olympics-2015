@@ -88,6 +88,15 @@ $color-primary: $color-accent4-bg;
 		}
 	}
 
+.toggler {
+	font-size: 50px;
+	color: white;
+	@include transition(color 0.3s);
+	&:hover {
+		color: $color-primary;
+		}
+	}
+
 #state-info {
 	float: right;
 	div {
