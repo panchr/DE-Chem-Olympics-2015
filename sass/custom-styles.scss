@@ -32,6 +32,20 @@ img {
 		}
 	}
 
+.citation {
+	a {
+		&:before {
+			content: "<";
+			}
+		&:after {
+			content: ">";
+			}
+		}
+	&::first-line {
+		margin-left: 64px;
+		}
+	}
+
 #header, #titleBar {
 	opacity: 0.8;
 	@include transition(opacity 0.5s);
