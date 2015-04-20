@@ -64,8 +64,6 @@
 			stateInfoAll = $("#state-info-all"),
 			resourceLocations = $("#name-info-all");
 
-		stateInfoAll.css("max-height", resourceLocations.height());
-
 		for (var state in stateInfo) {
 			var elem = document.createElement("div"),
 				header = document.createElement("h4"),
