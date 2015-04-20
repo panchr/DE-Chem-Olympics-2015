@@ -142,6 +142,10 @@ img {
 .expanding-group {
 	}
 
+.half-max {
+	max-width: 50vw;
+	}
+
 #state-info {
 	float: right;
 	div {
@@ -156,5 +160,8 @@ img {
 @media (max-width: 768px) {
 	#titleBar .title span {
 		display: none;
+		}
+	.half-max {
+		max-width: 100vw;
 		}
 	}
